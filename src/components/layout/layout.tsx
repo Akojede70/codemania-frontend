@@ -13,7 +13,7 @@ function Layout({ name = "Home", children }: LayoutProps) {
       <SideBar />
       <div className="w-full">
         <Header />
-        <div className="w-full h-screen pl-[4.8%] pt-[2%] bg-[#000000]">
+        <div className="w-full h-screen pl-[4.8%] pt-[2%] bg-[#000000] overflow-y-scroll scrollbar-tiny">
           {children}
         </div>
       </div>

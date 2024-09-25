@@ -13,7 +13,7 @@ function SideBar(): JSX.Element {
           <div key={x.id}>
             <div
               className={`flex items-center h-8 pl-[10%] cursor-pointer text-capitalize w-[75%] hover:bg-[#5A5A5A] hover:text-[#ffffff]
-                ${window.location.pathname === x.path ? 'bg-[#3B3B3B] h-10 w-full' : 'text-[#7E7F7F]'}`}
+                ${window.location.pathname === x.path ? 'bg-[#3B3B3B] h-10 w-75%' : 'text-[#7E7F7F]'}`}
               onClick={() => x.path && navigate(x.path)}
             >
               <div className="mr-2">

@@ -10,7 +10,7 @@ interface GameCardProps {
 
 const GameCard: React.FC<GameCardProps> = ({ header, text1, text2, smIcon, bgIcon }) => {
   return (
-    <div className='w-[45%] bg-[#1C1C1C] mt-[3%]'>
+    <div className='w-[45%] bg-[#1C1C1C] mt-[2%]'>
       <div className='w-full flex gap-[16%] pl-[2%]'>
         <div className='pl-[2%]'>
           <p className='text-2xl font-bold text-[#ffffff] pt-[4%]'>{header}</p>

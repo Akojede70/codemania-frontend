@@ -20,6 +20,15 @@ import BtnGo from "./tournaments-icon/btn-go.png"
 import BtnPlaying from "./tournaments-icon/btn-playing.png"
 import BtnProfile from "./tournaments-icon/btn-profile.png"
 import Person from "./tournaments-icon/person-icon.png"
+import BtnDetails from "./tournaments-icon/btn-details.png"
+import BtnTournament from "./tournaments-icon/btn-tournament.png"
+import Calender from "./tournaments-icon/calender.png"
+import Filter from "./tournaments-icon/filter.png"
+import Sort from "./tournaments-icon/sort.png"
+import Trophy from "./tournaments-icon/Trophy-Icon.png"
+import WarImage from "./tournaments-icon/war-image.png"
+
+
 export {
     // Header Icon
     Avatart,
@@ -41,4 +50,11 @@ export {
     BtnPlaying,
     BtnProfile,
     Person,
+    BtnDetails,
+    BtnTournament,
+    Calender,
+    Filter,
+    Sort,
+    Trophy,
+    WarImage,
 }
