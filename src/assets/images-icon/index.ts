@@ -28,7 +28,20 @@ import Sort from "./tournaments-icon/sort.png"
 import Trophy from "./tournaments-icon/Trophy-Icon.png"
 import WarImage from "./tournaments-icon/war-image.png"
 
+// details icon
+import Dash from "./details-icon/dash.png"
+import DetailsFitures from "./details-icon/details-fixtures.png"
+import DetailsLeaderboard from "./details-icon/details-leaderboard.png"
+import Down from "./details-icon/down.png"
+import Golden from "./details-icon/golden-trophy.png"
+import Up from "./details-icon/up.png"
+import Back from "./details-icon/back.png"
+import BigImg from "./details-icon/warBigImg.png"
 
+// fixtures icon
+import FixturesBigImage from "./fixtures-icon/fixtures-big-img.png"
+import FixturesImg from "./fixtures-icon/fixtures.png"
+import FixturesLeaderboard from "./fixtures-icon/fixtures-leaderboard.png"
 export {
     // Header Icon
     Avatart,
@@ -57,4 +70,18 @@ export {
     Sort,
     Trophy,
     WarImage,
+
+    // details icon
+    Dash,
+    DetailsFitures,
+    DetailsLeaderboard,
+    Down,
+    Golden,
+    Up,
+    Back,
+    BigImg,
+    // fixtures icon
+    FixturesBigImage,
+    FixturesImg,
+    FixturesLeaderboard,
 }

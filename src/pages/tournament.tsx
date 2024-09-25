@@ -46,12 +46,12 @@ const Tournaments = () => {
        </div>
 
 <div className='w-[95.5%] mb-[8%] flex flex-wrap justify-between'>
-  <TournamentsCards date={"10 Feb 2023"} title={"call of duty"} amount={"10,000"} vee4='4v4' months="10/48" play={"Free-to-play"} BtnTournament={BtnTournament} Calender={Calender} Trophy={Trophy} WarImage={WarImage} BtnDetails={BtnDetails} />
-  <TournamentsCards date={"10 Feb 2023"} title={"call of duty"} amount={"10,000"} vee4='4v4' months="10/48" play={"Free-to-play"} BtnTournament={BtnTournament} Calender={Calender} Trophy={Trophy} WarImage={WarImage} BtnDetails={BtnDetails} />
-  <TournamentsCards date={"10 Feb 2023"} title={"call of duty"} amount={"10,000"} vee4='4v4' months="10/48" play={"Free-to-play"} BtnTournament={BtnTournament} Calender={Calender} Trophy={Trophy} WarImage={WarImage} BtnDetails={BtnDetails} />
-  <TournamentsCards date={"10 Feb 2023"} title={"call of duty"} amount={"10,000"} vee4='4v4' months="10/48" play={"Free-to-play"} BtnTournament={BtnTournament} Calender={Calender} Trophy={Trophy} WarImage={WarImage} BtnDetails={BtnDetails} />
-  <TournamentsCards date={"10 Feb 2023"} title={"call of duty"} amount={"10,000"} vee4='4v4' months="10/48" play={"Free-to-play"} BtnTournament={BtnTournament} Calender={Calender} Trophy={Trophy} WarImage={WarImage} BtnDetails={BtnDetails} />
-  <TournamentsCards date={"10 Feb 2023"} title={"call of duty"} amount={"10,000"} vee4='4v4' months="10/48" play={"Free-to-play"} BtnTournament={BtnTournament} Calender={Calender} Trophy={Trophy} WarImage={WarImage} BtnDetails={BtnDetails} />
+  <TournamentsCards date={"10 Feb 2023"} title={"call of duty"} amount={"₦10,000"} vee4='4v4' months="10/48" play={"Free-to-play"} BtnTournament={BtnTournament} Calender={Calender} Trophy={Trophy} WarImage={WarImage} BtnDetails={BtnDetails} />
+  <TournamentsCards date={"10 Feb 2023"} title={"call of duty"} amount={"₦10,000"} vee4='4v4' months="10/48" play={"Free-to-play"} BtnTournament={BtnTournament} Calender={Calender} Trophy={Trophy} WarImage={WarImage} BtnDetails={BtnDetails} />
+  <TournamentsCards date={"10 Feb 2023"} title={"call of duty"} amount={"₦10,000"} vee4='4v4' months="10/48" play={"Free-to-play"} BtnTournament={BtnTournament} Calender={Calender} Trophy={Trophy} WarImage={WarImage} BtnDetails={BtnDetails} />
+  <TournamentsCards date={"10 Feb 2023"} title={"call of duty"} amount={"₦10,000"} vee4='4v4' months="10/48" play={"Free-to-play"} BtnTournament={BtnTournament} Calender={Calender} Trophy={Trophy} WarImage={WarImage} BtnDetails={BtnDetails} />
+  <TournamentsCards date={"10 Feb 2023"} title={"call of duty"} amount={"₦10,000"} vee4='4v4' months="10/48" play={"Free-to-play"} BtnTournament={BtnTournament} Calender={Calender} Trophy={Trophy} WarImage={WarImage} BtnDetails={BtnDetails} />
+  <TournamentsCards date={"10 Feb 2023"} title={"call of duty"} amount={"₦10,000"} vee4='4v4' months="10/48" play={"Free-to-play"} BtnTournament={BtnTournament} Calender={Calender} Trophy={Trophy} WarImage={WarImage} BtnDetails={BtnDetails} />
 </div>
      </div>
     </Layout>

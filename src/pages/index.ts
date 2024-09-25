@@ -1,4 +1,5 @@
 import Tournaments from "./tournament"
+import Fixtures from "./fixtures"
+import Details from "./details"
 
-
-export { Tournaments } 
+export { Tournaments, Details, Fixtures  } 

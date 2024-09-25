@@ -1,6 +1,6 @@
 import { Fragment } from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import { Tournaments  } from "./pages"
+import { Tournaments, Fixtures, Details  } from "./pages"
 import { CombineProviders, providers } from "./contexts"
 
 
@@ -12,8 +12,9 @@ function App() {
       <CombineProviders contexts={providers}>
         <Router>
           <Routes>
-            
             <Route index={true} path="/" element={<Tournaments />} />
+            <Route path="/details" element={<Details />} />
+            <Route path="/fixtures" element={<Fixtures />} />
           </Routes>
         </Router>
       </CombineProviders>
