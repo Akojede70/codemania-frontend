@@ -1,4 +1,4 @@
-import Landing from "./landing"
+import Tournaments from "./tournament"
 
 
-export { Landing } 
+export { Tournaments } 
