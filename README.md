@@ -23,3 +23,4 @@ https://www.figma.com/design/Vw5SUJg44NurcYduItacEB/CODEMANIA-FRONTEND-ASSESSMEN
 
 ### Here is the Deployed Link 
 
+https://codemania-test.netlify.app/details
