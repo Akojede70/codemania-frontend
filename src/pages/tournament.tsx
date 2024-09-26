@@ -35,7 +35,6 @@ const Tournaments = () => {
   };
 
   const handleFilterSelection = (filter:any) => {
-    console.log("Selected Filter:", filter);
     setSelectedFilter(filter);
     setIsDropdownVisible(false); // Close dropdown after selection
   };
