@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
-interface TournamentsCards {
+interface TournamentsCard {
     WarImage: string;
     title: string;
     Calender: string;
@@ -14,7 +14,7 @@ interface TournamentsCards {
     play: string;
   }
 
-const TournamentsCards: React.FC<TournamentsCards> = ({ WarImage, title, Calender, date, vee4, Trophy, BtnTournament, BtnDetails, amount, months, play,  }) => {
+const TournamentsCards: React.FC<TournamentsCard> = ({ WarImage, title, Calender, date, vee4, Trophy, BtnTournament, BtnDetails, amount, months, play,  }) => {
   const navigate = useNavigate()
   const handleClick = () => {
     navigate("/details")
@@ -32,7 +32,7 @@ const TournamentsCards: React.FC<TournamentsCards> = ({ WarImage, title, Calende
             <p>{date}</p>
           </div>
           <div className="flex items-center gap-[1%]">
-            <img src={Calender} alt="4v4 mode" />
+            <img src={Calender} alt="4v4-mode" />
             <p>{vee4}</p>
           </div>
           
@@ -59,11 +59,11 @@ const TournamentsCards: React.FC<TournamentsCards> = ({ WarImage, title, Calende
       <div className="flex flex-col gap-1 pt-[4%]">
         <img
           src={BtnTournament}
-          alt="Tournament button"
+          alt="Tournament-button"
         />
         <img
           src={BtnDetails}
-          alt="Details button"
+          alt="Details-button"
           className="cursor-pointer hover:scale-105 transition-transform duration-300"
           onClick={handleClick}
         />
