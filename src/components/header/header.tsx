@@ -6,12 +6,18 @@ import { Avatart,
     Logo,
     Search,
     Coins, } from '../../assets/images-icon/';
-
+import { useNavigate } from 'react-router-dom';
 function Header(): JSX.Element {
+
+    const navigate = useNavigate()
+  const handleClick = () => {
+    navigate("/")
+    window.scrollTo(0,0)
+  }
     return (
         <div className="flex items-center md:py-2 px-5 md:px-6 w-[125%] right-[25%] h-[9%] bg-[#121212] relative">
             <div className="flex-shrink-0 md:ml-[2%] lg:ml-[5.6%] w-[60px] md:w-auto ">
-                <img src={Logo} alt="logo" />
+                <img src={Logo} alt="logo" onClick={handleClick} className='cursor-pointer hover:scale-110 transition-transform duration-300'/>
             </div>
 
             <div className="relative w-[29.7%] md:w-[40%] lg:w-[29.7%] ml-[3.9%] md:ml-[7%] lg:ml-[10%] ">
