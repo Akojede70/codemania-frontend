@@ -32,7 +32,7 @@ interface Data {
   gamePlayed: number;
   wins: number;
   losses: number;
-  winLossRatio: number;
+  winLossRatio: string;
   points: number;
 }
 
@@ -45,7 +45,7 @@ function createData(
   losses: number,
   points: number
 ): Data {
-  const winLossRatio = wins / losses;
+  const winLossRatio = `${Math.round((wins / gamePlayed) * 100)}%`;
   return { placement, player, gamePlayed, wins, losses, winLossRatio, points };
 }
 
@@ -55,27 +55,37 @@ const rows = [
     <div className='flex gap-2'> 
         <img src={Up} alt="Up" width={16} />
         <p>1</p></div>, 
-    'John Doe', 50, 30, 20, 500
+    'Adebayo Oyeleye', 20, 20, 0, 49
   ),
   createData(
-    <span>2 <img src={Down} alt="Down" width={16} /></span>, 
-    'Jane Smith', 45, 35, 10, 400
+    <div className='flex gap-2'> 
+    <img src={Down} alt="Up" width={16} />
+    <p>1</p></div>,  
+    'IBROMOVIC109', 20, 19, 1, 47
   ),
   createData(
-    <span>3 <img src={Dash} alt="Dash" width={16} /></span>, 
-    'Sam Johnson', 60, 40, 20, 600
+    <div className='flex gap-2'> 
+        <img src={Dash} alt="Up" width={16} />
+        <p>1</p></div>, 
+    'Drillz', 20, 17, 3, 46
   ),
   createData(
-    <span>4 <img src={Up} alt="Up" width={16} /></span>, 
-    'Michael Brown', 40, 25, 15, 350
+    <div className='flex gap-2'> 
+        <img src={Up} alt="Up" width={16} />
+        <p>1</p></div>, 
+    'Bigbadderwilf', 20, 12, 8, 39
   ),
   createData(
-    <span>5 <img src={Down} alt="Down" width={16} /></span>, 
-    'Lisa Black', 55, 45, 10, 650
+    <div className='flex gap-2'> 
+    <img src={Up} alt="Up" width={16} />
+    <p>1</p></div>, 
+    'Pirky', 20, 10, 6, 34
   ),
   createData(
-    <span>6 <img src={Dash} alt="Dash" width={16} /></span>, 
-    'Tom Green', 48, 28, 20, 450
+    <div className='flex gap-2'> 
+    <img src={Down} alt="Up" width={16} />
+    <p>1</p></div>, 
+    'Tom Green', 22, 8, 14, 30
   ),
 ];
 
@@ -93,7 +103,7 @@ export default function StickyHeadTable() {
   };
 
   return (
-    <Paper sx={{ width: '100%', overflow: 'hidden' }}>
+    <Paper sx={{ width: '100%', overflow: 'hidden', }}>
       <TableContainer sx={{ maxHeight: 440 }}>
         <Table stickyHeader aria-label="sticky table">
           <TableHead>
@@ -107,6 +117,7 @@ export default function StickyHeadTable() {
                     backgroundColor: '#2E2E2E', 
                     color: '#7E7F7F',
                     borderBottom: '2px solid #2E2E2E',
+                    padding: "13px 38px"
                   }}
                 >
                   {column.label}
@@ -130,6 +141,7 @@ export default function StickyHeadTable() {
                             backgroundColor: '#242424', 
                             color: '#FFFFFF',
                             borderBottom: '2px solid #2E2E2E',
+                            padding: "15px 40px"
                           }}
                         >
                           {column.format && typeof value === 'number'

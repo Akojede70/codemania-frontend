@@ -1,7 +1,6 @@
 import React from 'react'
-
+import { useNavigate } from 'react-router-dom';
 interface DetailsCardProps {
-  Back: string;
   BigImg: string;
   Golden: string;
   Calender: string;
@@ -18,10 +17,15 @@ interface DetailsCardProps {
   tournamentInformation: string;
   }
 
-const DetailsCard: React.FC<DetailsCardProps> = ({ header, amount, Back, description, BigImg, date, months, play, Golden, tournamentInformation,  vee4, Calender, BtnTournament, DetailsLeaderboard, DetailsFitures }) => {
+const DetailsCard: React.FC<DetailsCardProps> = ({ header, amount, description, BigImg, date, months, play, Golden, tournamentInformation,  vee4, Calender, BtnTournament, DetailsLeaderboard, DetailsFitures }) => {
+  const navigate = useNavigate()
+  const handleClick = () => {
+    navigate("/fixtures")
+    window.scrollTo(0,0)
+  }
   return (
     <div>
-    <img src={Back} alt='back' className='mb-4'/>
+    
     <img src={BigImg} alt='big-img' className='w-[95.5%]'/>
     <p className='pt-[2%] text-[#ffffff] text-2xl font-bold'> {header}</p>
     <div className="w-[9%] mt-3 flex gap-1 text-[#7E7F7F] bg-[#242424] pl-[1%] py-1 rounded-[30px]">
@@ -57,7 +61,7 @@ const DetailsCard: React.FC<DetailsCardProps> = ({ header, amount, Back, descrip
     <p className='text-[#ffffff] text-2xl font-bold py-[2%]'> {tournamentInformation}</p>
   <div className='flex gap-3'>
       <img src={DetailsLeaderboard} alt="leaderboard"/>
-      <img src={DetailsFitures} alt="fixtures"/>
+      <img src={DetailsFitures} alt="fixtures" onClick={handleClick} className=' cursor-pointer hover:scale-110 transition-transform duration-300'/>
   </div>
     </div>
   </div>

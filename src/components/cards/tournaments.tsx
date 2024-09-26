@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { useNavigate } from 'react-router-dom';
 interface TournamentsCards {
     WarImage: string;
     title: string;
@@ -15,6 +15,11 @@ interface TournamentsCards {
   }
 
 const TournamentsCards: React.FC<TournamentsCards> = ({ WarImage, title, Calender, date, vee4, Trophy, BtnTournament, BtnDetails, amount, months, play,  }) => {
+  const navigate = useNavigate()
+  const handleClick = () => {
+    navigate("/details")
+    window.scrollTo(0,0)
+  }
   return (
     <div className="w-[30%] bg-[#1C1C1C] mt-[2%]">
     <img src={WarImage} alt="war-image" />
@@ -31,7 +36,7 @@ const TournamentsCards: React.FC<TournamentsCards> = ({ WarImage, title, Calende
             <p>{vee4}</p>
           </div>
           
-          <div className="w-[75%] flex bg-[#242424] pl-[4%] py-1 rounded-[30px]">
+          <div className="w-[85%] flex bg-[#242424] pl-[4%] py-1 rounded-[30px]">
             <img src={Trophy} alt="trophy" />
             <p>{amount}</p>
           </div>
@@ -55,12 +60,12 @@ const TournamentsCards: React.FC<TournamentsCards> = ({ WarImage, title, Calende
         <img
           src={BtnTournament}
           alt="Tournament button"
-          className="cursor-pointer"
         />
         <img
           src={BtnDetails}
           alt="Details button"
           className="cursor-pointer"
+          onClick={handleClick}
         />
       </div>
     </div>
