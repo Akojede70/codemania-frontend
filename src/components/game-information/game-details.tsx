@@ -19,9 +19,8 @@ interface DetailsCardProps {
 
 const DetailsCard: React.FC<DetailsCardProps> = ({ header, amount, description, BigImg, date, months, play, Golden, tournamentInformation,  vee4, Calender, BtnTournament, DetailsLeaderboard, DetailsFitures }) => {
   const navigate = useNavigate()
-  const handleClick = () => {
-    navigate("/fixtures")
-    window.scrollTo(0,0)
+  const handleClick = (path:string) => {
+    navigate(path)
   }
   return (
     <div>
@@ -60,8 +59,8 @@ const DetailsCard: React.FC<DetailsCardProps> = ({ header, amount, description, 
     <div>
     <p className='text-[#ffffff] text-sm md:text-2xl font-bold py-[4%] lg:py-[2%]'> {tournamentInformation}</p>
   <div className='flex gap-3 mb-6 lg:mb-0'>
-      <img src={DetailsLeaderboard} alt="leaderboard" className='md:w-[190px] lg:w-auto md:h-[55px] lg:h-auto'/>
-      <img src={DetailsFitures} alt="fixtures" onClick={handleClick} className=' md:w-[190px] lg:w-auto md:h-[55px] lg:h-auto cursor-pointer hover:scale-110 transition-transform duration-300'/>
+      <img src={DetailsLeaderboard} alt="leaderboard" onClick={() => handleClick("/details")} className='md:w-[190px] lg:w-auto md:h-[55px] lg:h-auto cursor-pointer hover:scale-110 transition-transform duration-300'/>
+      <img src={DetailsFitures} alt="fixtures" onClick={() => handleClick("/fixtures")} className=' md:w-[190px] lg:w-auto md:h-[55px] lg:h-auto cursor-pointer hover:scale-110 transition-transform duration-300'/>
   </div>
     </div>
   </div>
