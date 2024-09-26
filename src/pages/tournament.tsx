@@ -65,7 +65,7 @@ const Tournaments = () => {
               <img src={BtnProfile} alt='profile' className='pt-[2%] pb-[3%] hover:scale-110 transition-transform duration-300 cursor-pointer'/>
             </div>
             <div className='pt-[1.5%]'>
-              <img src={Person} alt='person' className='h-[80%] hover:scale-110 transition-transform duration-300'/> 
+              <img src={Person} alt='person' className='h-[80%] hover:scale-110 transition-transform duration-300 hidden md:block'/> 
             </div>
           </div>
         </div>

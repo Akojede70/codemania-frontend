@@ -9,12 +9,12 @@ import { Avatart,
 
 function Header(): JSX.Element {
     return (
-        <div className="flex items-center py-2 px-6 w-[125%] right-[25%] h-[9%] bg-[#121212] relative">
-            <div className="flex-shrink-0 ml-[5.6%]">
+        <div className="flex items-center md:py-2 px-5 md:px-6 w-[125%] right-[25%] h-[9%] bg-[#121212] relative">
+            <div className="flex-shrink-0 md:ml-[2%] lg:ml-[5.6%] w-[60px] md:w-auto ">
                 <img src={Logo} alt="logo" />
             </div>
 
-            <div className="relative w-[29.7%] ml-[10%] ">
+            <div className="relative w-[29.7%] md:w-[40%] lg:w-[29.7%] ml-[3.9%] md:ml-[7%] lg:ml-[10%] ">
   {/* Input field */}
   <input 
     type="text" 
@@ -29,17 +29,17 @@ function Header(): JSX.Element {
 </div>
 
 
-            <div className="absolute flex left-[76%] w-[30%] items-center">
-            <div className="flex items-center justify-center bg-[#1C1C1C] rounded-full h-10 w-10">
+            <div className="absolute flex left-[53%] md:left-[68%] lg:left-[76%] w-[50%] md:w-[30%] items-center">
+            <div className="flex items-center justify-center bg-[#1C1C1C] rounded-full h-5 md:h-10 md:w-10">
   <img src={Bell} alt="notification" className="h-5 w-5" />
 </div>
 
-<div className="px-2 flex gap-1">
+<div className="px-2 flex gap-1 text-xs">
                     <img src={Coins} alt="coin" />
                     <p className='text-[#E5E4E4]'>20,000</p>
                 </div>
 
-                <div className="px-1 h-[14%] w-[14%]">
+                <div className="w-[18%] md:w-[14%] h-[10%] md:h-[14%] pb-9 lg:pb-0 pl-2 md:pl-0 md:px-1">
                     <img src={Avatart} alt="dp" />
                 </div>
 
@@ -49,7 +49,7 @@ function Header(): JSX.Element {
                     <span className="font-medium text-[12px] ">Akoiola Olalekan</span>
                 </div>
 
-                <div className="px-2">
+                <div className="w-[77%] md:w-auto px-2">
                     <img src={Badge} alt="dropdown" />
                 </div>
 

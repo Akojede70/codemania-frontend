@@ -28,7 +28,7 @@ const GameCard: React.FC<GameCardProps> = ({ header, text1, text2, smIcon, bgIco
           <img
             src={bgIcon}
             alt='person'
-            className='h-[80%] hover:scale-110 transition-transform duration-300'
+            className='h-[80%] hover:scale-110 transition-transform duration-300 hidden md:block'
           />
         </div>
       </div>
