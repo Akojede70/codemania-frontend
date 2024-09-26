@@ -90,7 +90,7 @@ const Tournaments = () => {
                 onClick={handleToggleDropdown} 
               />
               {isDropdownVisible && (
-                <div className="absolute bg-[#1C1C1C] text-xs md:text-[18.5px] lg:text-xl text-[#ffffff] shadow-md rounded mt-2 w-24 md:w-40">
+                <div className="absolute bg-[#1C1C1C] text-xs text-[#ffffff] shadow-md rounded mt-2 w-24 md:w-40">
                   <ul className="list-none p-2">
                     <li 
                       className="py-1 md:py-2 px-1 md:px-4 hover:bg-gray-500 cursor-pointer" 
