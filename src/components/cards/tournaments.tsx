@@ -22,7 +22,7 @@ const TournamentsCards: React.FC<TournamentsCard> = ({ WarImage, title, Calender
   }
   return (
     <div className="w-full md:w-[47.5%] lg:w-[30%] bg-[#1C1C1C] mb-[6%] md:mb-0 md:mt-[4%] lg:mt-[3%]">
-    <img src={WarImage} alt="war-image" />
+    <img src={WarImage} alt="war"/>
     <div className="w-full flex flex-col gap-[2%] p-[3%]">
       <p className="text-2xl text-white">{title}</p>
       <div className="text-[#7E7F7F] text-sm flex gap-11 pt-[3%]">

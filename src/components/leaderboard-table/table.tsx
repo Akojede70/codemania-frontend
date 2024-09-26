@@ -90,8 +90,8 @@ const rows = [
 ];
 
 export default function StickyHeadTable() {
-  const [page, setPage] = React.useState(0);
-  const [rowsPerPage, setRowsPerPage] = React.useState(10);
+  const [page ] = React.useState(0);
+  const [rowsPerPage ] = React.useState(10);
 
   return (
     <Paper sx={{ width: '100%', overflow: 'hidden', }}>
