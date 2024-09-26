@@ -21,11 +21,11 @@ const TournamentsCards: React.FC<TournamentsCards> = ({ WarImage, title, Calende
     window.scrollTo(0,0)
   }
   return (
-    <div className="w-[30%] bg-[#1C1C1C] mt-[2%]">
+    <div className="w-full md:w-[47.5%] lg:w-[30%] bg-[#1C1C1C] mb-[6%] md:mb-0 md:mt-[4%] lg:mt-[3%]">
     <img src={WarImage} alt="war-image" />
     <div className="w-full flex flex-col gap-[2%] p-[3%]">
       <p className="text-2xl text-white">{title}</p>
-      <div className="text-[#7E7F7F] flex gap-11 pt-[3%]">
+      <div className="text-[#7E7F7F] text-sm flex gap-11 pt-[3%]">
         <div className="flex flex-col gap-2">
           <div className="flex gap-[2px]">
             <img src={Calender} alt="calendar" />
@@ -64,7 +64,7 @@ const TournamentsCards: React.FC<TournamentsCards> = ({ WarImage, title, Calende
         <img
           src={BtnDetails}
           alt="Details button"
-          className="cursor-pointer"
+          className="cursor-pointer hover:scale-105 transition-transform duration-300"
           onClick={handleClick}
         />
       </div>

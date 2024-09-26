@@ -57,12 +57,12 @@ const Tournaments = () => {
       <div>
       <TitleText title="Gamer" />
         {/* Profile Setup Section */}
-        <div className='w-[95.4%] bg-[#1C1C1C]'>
+        <div className='w-[95.4%] bg-[#1C1C1C] mt-2 md:mt-0'>
           <div className='flex gap-[21.5%]'>
-            <div className='pl-[2%]'>
-              <p className='text-3xl font-bold text-[#ffffff] pt-[3%]'>Setup your profile</p>
+            <div className='pl-[2%] '>
+              <p className='text-sm md:text-3xl font-bold text-[#ffffff] pt-[3%]'>Setup your profile</p>
               <p className='text-[#7E7F7F] pt-[0.3%]'>Complete your information to get access to tournaments and other premium features</p>
-              <img src={BtnProfile} alt='profile' className='pt-[2%] pb-[3%] hover:scale-110 transition-transform duration-300 cursor-pointer'/>
+              <img src={BtnProfile} alt='profile' className='w-[60%] md:w-auto pt-[2%] pb-[3%] hover:scale-110 transition-transform duration-300 cursor-pointer'/>
             </div>
             <div className='pt-[1.5%]'>
               <img src={Person} alt='person' className='h-[80%] hover:scale-110 transition-transform duration-300 hidden md:block'/> 
@@ -77,36 +77,36 @@ const Tournaments = () => {
         </div>
 
         {/* Tournament Text Content */}
-        <div className='flex gap-[55%] mt-[2%]'>
+        <div className='py-3 md:py-0 w-[95.8%] flex justify-between lg:gap-[55%] mt-[2%] md:mt-[4%] lg:mt-[2%]'>
           <div>
-            <p className='text-2xl font-bold text-[#ffffff] pt-[3%]'>Tournaments</p>
+            <p className='text-xs md:text-2xl font-bold text-[#ffffff] pt-[10%]'>Tournaments</p>
           </div>
           <div className='flex gap-[4%] pt-[1.4%]'>
-            <img src={Sort} alt='sort'/>
+            <img src={Sort} alt='sort' className='w-[90px] h-[27px] ml-3 md:ml-0 md:w-[165px] md:h-full'/>
             <div className="relative">
               <img 
                 src={Filter} 
                 alt="filter" 
-                className="cursor-pointer hover:scale-110 transition-transform duration-300" 
+                className="w-[100px] h-[27px] md:w-[165px] md:h-full cursor-pointer hover:scale-110 transition-transform duration-300" 
                 onClick={handleToggleDropdown} 
               />
               {isDropdownVisible && (
-                <div className="absolute bg-[#1C1C1C] text-[#ffffff] shadow-md rounded mt-2 w-48">
+                <div className="absolute bg-[#1C1C1C] text-xs md:text-[18.5px] lg:text-xl text-[#ffffff] shadow-md rounded mt-2 w-24 md:w-40">
                   <ul className="list-none p-2">
                     <li 
-                      className="py-2 px-4 hover:bg-gray-500 cursor-pointer" 
+                      className="py-1 md:py-2 px-1 md:px-4 hover:bg-gray-500 cursor-pointer" 
                       onClick={() => handleFilterSelection("All")}
                     >
                       All
                     </li>
                     <li 
-                      className="py-2 px-4 hover:bg-gray-500 cursor-pointer" 
+                      className="py-1 md:py-2 px-1 md:px-4 hover:bg-gray-500 cursor-pointer" 
                       onClick={() => handleFilterSelection("₦10,000 - ₦20,000")}
                     >
                       ₦10,000 - ₦20,000
                     </li>
                     <li 
-                      className="py-2 px-4 hover:bg-gray-500 cursor-pointer" 
+                      className="py-1 md:py-2 px-1 md:px-4 hover:bg-gray-500 cursor-pointer" 
                       onClick={() => handleFilterSelection("₦21,000 - ₦60,000")}
                     >
                       ₦21,000 - ₦60,000
@@ -119,7 +119,7 @@ const Tournaments = () => {
         </div>
 
         {/* Tournament Cards */}
-        <div className='w-[95.5%] mb-[8%] flex flex-wrap gap-[5%]'>
+        <div className='w-[95.5%]  mb-[22%] lg:mb-[8%] flex flex-wrap gap-[5%]'>
           {tournamentData.filter(tournament => isTournamentVisible(tournament.amount)).map((tournament, index) => (
             <TournamentsCards 
               key={index}

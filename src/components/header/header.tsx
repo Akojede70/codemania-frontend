@@ -49,8 +49,8 @@ function Header(): JSX.Element {
                     <span className="font-medium text-[12px] ">Akoiola Olalekan</span>
                 </div>
 
-                <div className="w-[77%] md:w-auto px-2">
-                    <img src={Badge} alt="dropdown" />
+                <div className="w-[77%] md:w-auto px-2 mb-1 md:mb-0">
+                    <img src={Badge} alt="dropdown h-[20px] md:h-auto" />
                 </div>
 
                </div>
