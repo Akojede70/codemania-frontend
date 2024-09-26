@@ -22,7 +22,7 @@ const Fixtures = () => {
             description={" Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione alias dolorum, blanditiis minima dignissimos quisquam itaque quidem ut reprehenderit, nesciunt culpa id quibusdam saepe? Recusandae ipsa eius perspiciatis quidem distinctio quasi atque quibusdam unde ea accusantium vel, expedita maiores provident facere rem libero ex consectetur minima nulla sit quis inventore dolores! Explicabo, aliquid facere. Placeat, ea? Doloremque fugit, perspiciatis corporis"}
             date={"10 Feb 2023"} months={"10/48"} tournamentInformation={"Tournament informtion"}/>
 
-            <div className='mt-[3%] w-[94.4%] mb-[32%] md:mb-[22%] lg:mb-0'>
+            <div className='mt-[3%] w-[94.4%] mb-[50%] md:mb-[22%] lg:mb-0'>
                 <img src={FixturesBigImage} alt='fix-img'/>
             </div>
           </div>

@@ -118,7 +118,7 @@ const Tournaments = () => {
         </div>
 
         {/* Tournament Cards */}
-        <div className='w-[95.5%]  mb-[22%] lg:mb-[8%] flex flex-wrap gap-[5%]'>
+        <div className='w-[95.5%]  mb-[40%] lg:mb-[8%] flex flex-wrap gap-[5%]'>
           {tournamentData.filter(tournament => isTournamentVisible(tournament.amount)).map((tournament, index) => (
             <TournamentsCards 
               key={index}

@@ -29,7 +29,7 @@ const Details = () => {
             date={"10 Feb 2023"} months={"10/48"} tournamentInformation={"Tournament informtion"}/>
           </div>
 
-          <div className='w-[275px] md:w-[570px] lg:w-[95.5%] mb-[30%] md:mb-[20%] lg:mb-[10%]'>
+          <div className='w-[275px] md:w-[570px] lg:w-[95.5%] mb-[50%] md:mb-[20%] lg:mb-[10%]'>
           <StickyHeadTable/>
           </div>
     
