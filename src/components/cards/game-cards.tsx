@@ -15,7 +15,7 @@ const GameCard: React.FC<GameCardProps> = ({ header, text1, text2, smIcon, bgIco
         <div className='pl-[2%]'>
           <p className='text-xs md:text-2xl font-bold text-[#ffffff] pt-[4%]'>{header}</p>
           <div className='text-[#7E7F7F] py-[0.3%]'>
-            <p>{text1}</p>
+            <p className='lg:text-[15px]'>{text1}</p>
             <p>{text2}</p>
           </div>
           <img
